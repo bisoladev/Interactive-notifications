@@ -4,7 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        grey: '#DFDEE0',
+        snow: '#F7FAFD',
+        darkText: '#1C202B',
+        text: '#5E6778',
+        greyText: '#939CAD',
+        red: '#F36663',
+        borderGrey: '#DDE7EE',
+        blue: '#0A327B',
+        hoverBlue: '#E5EFFA',
       },
     },
   },
