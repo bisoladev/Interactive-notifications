@@ -17,7 +17,11 @@ function App() {
               <p>3</p>
             </div>
           </div>
-          <button type="button" className="hover:text-blue text-greyText">
+          <button
+            type="button"
+            className="hover:text-blue text-greyText"
+            onClick={() => setRead(false)}
+          >
             Mark all as read
           </button>
         </div>
