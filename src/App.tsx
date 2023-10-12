@@ -48,16 +48,16 @@ function App() {
       <div className="md:card-shadow my-auto h-screen w-full overflow-y-auto rounded-2xl bg-white px-5 py-5 md:h-5/6 md:w-9/12 md:px-10 lg:w-7/12">
         <div className="flex justify-between pb-6 pt-3.5">
           <div className="flex">
-            <h1 className="pr-3 text-lg font-bold text-darkText md:text-2xl">
+            <h1 className="pr-3 text-lg font-bold text-darkText sm:text-2xl">
               Notifications
             </h1>
-            <div className="mt-1 h-[20px] w-6 rounded-md bg-blue text-center text-sm font-bold text-white md:h-[25px] md:w-8 md:text-base">
+            <div className="mt-1 h-[20px] w-6 rounded-md bg-blue text-center text-sm font-bold text-white sm:text-base md:h-[25px] md:w-8">
               <p>{countUnreadNotifications()}</p>
             </div>
           </div>
           <button
             type="button"
-            className="text-sm text-greyText hover:text-blue md:text-base"
+            className="text-sm text-greyText hover:text-blue sm:text-base"
             onClick={markAllAsRead}
           >
             Mark all as read
@@ -80,7 +80,7 @@ function App() {
                     />
                   </div>
                   <div className="transition-all">
-                    <div className="flex flex-wrap text-sm md:text-base">
+                    <div className="flex flex-wrap text-sm sm:text-base">
                       <p>
                         <span className="pr-2 font-bold text-darkText">
                           {item.name}
@@ -107,7 +107,7 @@ function App() {
                     </div>
                     <p className="text-greyText">{item.date}</p>
                     {item?.child && item.read ? (
-                      <div className="child-content active my-3 rounded-[5px] border border-borderGrey p-2 text-sm hover:cursor-pointer hover:bg-hoverBlue md:p-4 md:text-base">
+                      <div className="child-content active my-3 rounded-[5px] border border-borderGrey p-2 text-sm hover:cursor-pointer hover:bg-hoverBlue sm:text-base md:p-4">
                         <p>{item?.child}</p>
                       </div>
                     ) : null}
