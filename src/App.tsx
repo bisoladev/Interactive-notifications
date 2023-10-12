@@ -6,20 +6,20 @@ import data from './data';
 function App() {
   const [read, setRead] = useState(true);
   return (
-    <div className=" bg-snow flex h-screen w-full justify-center align-middle">
-      <div className="md:card-shadow my-auto h-screen w-full overflow-y-auto rounded-2xl bg-white px-10 py-5 md:h-5/6 md:w-9/12 lg:w-7/12">
+    <div className=" flex h-screen w-full justify-center bg-snow align-middle">
+      <div className="md:card-shadow my-auto h-screen w-full overflow-y-auto rounded-2xl bg-white px-5 py-5 md:h-5/6 md:w-9/12 md:px-10 lg:w-7/12">
         <div className="flex justify-between pb-6 pt-3.5">
           <div className="flex">
-            <h1 className="text-darkText pr-3 text-2xl font-bold">
+            <h1 className="pr-3 text-lg font-bold text-darkText md:text-2xl">
               Notifications
             </h1>
-            <div className="bg-blue mt-1 h-[25px] w-8 rounded-md text-center text-base font-bold text-white">
+            <div className="mt-1 h-[20px] w-6 rounded-md bg-blue text-center text-sm font-bold text-white md:h-[25px] md:w-8 md:text-base">
               <p>3</p>
             </div>
           </div>
           <button
             type="button"
-            className="hover:text-blue text-greyText"
+            className="text-sm text-greyText hover:text-blue md:text-base"
             onClick={() => setRead(false)}
           >
             Mark all as read
@@ -30,7 +30,7 @@ function App() {
             return (
               <div
                 key={`${item.name}${id}`}
-                className="text-text bg-snow my-2.5 flex justify-between rounded-lg p-5 text-base"
+                className="my-2.5 flex justify-between rounded-lg bg-snow p-5 text-base text-text"
               >
                 <div className="flex">
                   <div className="mr-5 flex-none">
@@ -41,14 +41,14 @@ function App() {
                     />
                   </div>
                   <div>
-                    <div className="flex flex-wrap">
+                    <div className="flex flex-wrap text-sm md:text-base">
                       <p>
-                        <span className="text-darkText pr-2 font-bold">
+                        <span className="pr-2 font-bold text-darkText">
                           {item.name}
                         </span>
                         {item?.action}
                         <span className="px-2">
-                          <a href="#" className="text-blue font-bold">
+                          <a href="#" className="font-bold text-blue">
                             {item?.link}
                           </a>
                         </span>
@@ -68,7 +68,7 @@ function App() {
                     </div>
                     <p className="text-greyText">{item.date}</p>
                     {item?.child ? (
-                      <div className="border-borderGrey hover:bg-hoverBlue my-3 rounded-[5px] border p-4 hover:cursor-pointer">
+                      <div className="my-3 rounded-[5px] border border-borderGrey p-2 text-sm hover:cursor-pointer hover:bg-hoverBlue md:p-4 md:text-base">
                         <p>{item?.child}</p>
                       </div>
                     ) : null}
@@ -76,7 +76,7 @@ function App() {
                 </div>
 
                 {item?.profilePic ? (
-                  <button type="button">
+                  <button type="button" className="flex-none">
                     <img
                       src={item?.profilePic}
                       alt={item.name}
