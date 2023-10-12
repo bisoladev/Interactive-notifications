@@ -6,6 +6,7 @@ const data = [
     link: 'My first tournament today!',
     date: '1m ago',
     read: false,
+    id: 1,
   },
   {
     picture: '/img/angela.png',
@@ -13,6 +14,7 @@ const data = [
     action: 'followed you',
     date: '5m ago',
     read: false,
+    id: 2,
   },
   {
     picture: '/img/jacob.png',
@@ -21,6 +23,7 @@ const data = [
     link: 'Chess Club',
     date: '1 day ago',
     read: false,
+    id: 3,
   },
   {
     picture: '/img/rizky.png',
@@ -29,7 +32,8 @@ const data = [
     child:
       'Hello, thanks for setting up the Chess Club. I’ve been a member for a few weeks now and I’m already having lots of fun and improving my game.',
     date: '5 days ago',
-    read: true,
+    read: false,
+    id: 4,
   },
   {
     picture: '/img/kimberly.png',
@@ -38,6 +42,7 @@ const data = [
     profilePic: '/img/profilepic.png',
     date: '1 week ago',
     read: true,
+    id: 5,
   },
   {
     picture: '/img/nathan.png',
@@ -46,6 +51,7 @@ const data = [
     link: '5 end-game strategies to increase your win rate',
     date: '2 weeks ago',
     read: true,
+    id: 6,
   },
   {
     picture: '/img/anna.png',
@@ -54,6 +60,7 @@ const data = [
     link: 'Chess Club',
     date: '2 weeks ago',
     read: true,
+    id: 7,
   },
 ];
 

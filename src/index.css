@@ -20,4 +20,14 @@ body {
   .card-shadow {
     box-shadow: 0px 20px 60px 0px rgba(73, 97, 168, 0.05);
   }
+
+  .child-content {
+    height: 0;
+    opacity: 0;
+    transition: opacity 20s ease-in-out; /* You can adjust the duration and timing function as needed */
+  }
+  .child-content.active {
+    height: auto;
+    opacity: 1;
+  }
 }
