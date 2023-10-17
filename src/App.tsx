@@ -68,7 +68,9 @@ function App() {
             return (
               <div
                 key={item.id}
-                className="my-2.5 flex justify-between rounded-lg bg-snow p-5 text-base text-text"
+                className={`${
+                  item.read ? 'bg-white' : 'bg-snow'
+                } my-2.5 flex justify-between rounded-lg p-5 text-base text-text transition-colors duration-300 ease-out`}
                 onClick={() => handleNotificationClick(item.id)}
               >
                 <div className="flex">
@@ -107,7 +109,7 @@ function App() {
                     </div>
                     <p className="text-greyText">{item.date}</p>
                     {item?.child && item.read ? (
-                      <div className="child-content active my-3 rounded-[5px] border border-borderGrey p-2 text-sm hover:cursor-pointer hover:bg-hoverBlue sm:text-base md:p-4">
+                      <div className="my-3 rounded-[5px] border border-borderGrey p-2 text-sm hover:cursor-pointer hover:bg-hoverBlue sm:text-base md:p-4">
                         <p>{item?.child}</p>
                       </div>
                     ) : null}
